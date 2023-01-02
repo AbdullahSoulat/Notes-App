@@ -2,7 +2,7 @@
 
 :root {
     --note-size: 150px;
-    --add-btn-size: 40px;
+    --add-btn-size: 35px;
     --add-btn-font: 25px;
 }
 
@@ -45,7 +45,7 @@ body {
     background-color: #262626;
     color: white;
     resize: none;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
 }
 
 .add-btn {
@@ -81,7 +81,7 @@ body {
     font-size: var(--add-btn-font);
     left: 50%;
     transform: translateX(-50%);
-    bottom: 0;
+    top: 0px;
 }
 
 
