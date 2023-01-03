@@ -10,19 +10,51 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-    <div id="app">
+    <div class="popup-box">
+        <div class="popup">
+            <form action="#">
+                <div class="popup-title-container">
+                    <input type="text">
+                </div>
+            
+                <div class="note-description">
+                    <textarea class="description" spellcheck="false"></textarea>
+                </div>
+            </form>
+        </div>
+        <footer>
+            <!-- <i class="uil uil-times"></i> -->
+            <!-- <i class="uil uil-previous"></i> -->
+            <button class="save-btn"><i class="uil uil-save"></i></button>
+        </footer>
+    </div>
+
+    <!-- <div id="app" class="hidden">
         <header><h1 class="title">Notes</h1></header>
         <div class="notes-container">
-            <textarea class="note">Sloth is super fat and mota</textarea>
-            <textarea class="note">Momina is also known as bigfoot</textarea>
-            <textarea class="note">Giraffee is tall and also lazy</textarea>
-            <textarea class="note">I am a Koala</textarea>
+            <div class="note">
+                <h2 class="note-title">Sloth</h2>
+                <p class="note-content">Sloth is super fat and mota</p>
+                
+            </div>
+            <div class="note">
+                <h2 class="note-title">BigFoot</h2>
+                <p class="note-content">Momina is also known as the bigfoot</p>
+            </div>
+            <div class="note">
+                <h2 class="note-title">Giraffee</h2>
+                <p class="note-content">Giraffee is fat and somewhat lazy</p>
+            </div>
+            <div class="note">
+                <h2 class="note-title">Koal</h2>
+                <p class="note-content">I am a Koala</p>
+            </div>
         </div>
         <div class="add-btn">
             <button type="button" class="add-note">
                 <div class="icon"><i class="uil uil-plus"></i></div>
             </button>
         </div>
-    </div>
+    </div> -->
 </body>
 </html>
