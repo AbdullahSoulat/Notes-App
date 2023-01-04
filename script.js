@@ -26,6 +26,7 @@ addNoteBtn.addEventListener('click', () => {
 })
 
 function showNotes() {
+    document.querySelectorAll('.note').forEach(note => note.remove());
     notes.forEach((note) => {
         console.log(note);
         const newNote = document.createElement('div');
@@ -46,6 +47,8 @@ function showNotes() {
 
         notesContainer.appendChild(newNote);
     })
+    titleTag.value = '';
+    descriptionTag.value = '';
 }
 showNotes();
 
