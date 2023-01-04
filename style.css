@@ -51,17 +51,18 @@ body {
     gap: 1em;
     place-content: center;
     justify-content: center;
+    z-index: 1;
 }
 
 .note {
     height: var(--note-size);
     padding: 0.8em;
     border: none;
-    /* border-radius: 0.5em; */
     background-color: #262626;
     color: white;
     width: var(--note-size);
-    position: relative;    
+    position: relative;
+    cursor: pointer;
 }
 
 .note-title {
@@ -74,6 +75,8 @@ body {
     color: white;
     font-size: 0.9rem;
     font-weight: 400;
+    height: 50%;
+    overflow-y: hidden;
 }
 
 .uil-trash {
@@ -82,7 +85,7 @@ body {
     right: 0;
     bottom: 0;
     margin: 5px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     cursor: pointer;
 }
 
@@ -174,6 +177,10 @@ footer, .add-btn {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.add-btn {
+    z-index: 5;
 }
 
 .uil-check {
