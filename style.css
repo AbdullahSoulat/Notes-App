@@ -50,7 +50,6 @@ body {
     margin: 1em;
     gap: 1em;
     place-content: center;
-    /* justify-content: space-evenly; */
     justify-content: center;
 }
 
@@ -84,29 +83,7 @@ body {
     bottom: 0;
     margin: 5px;
     font-size: 1.1rem;
-}
-
-.date {
-    font-size: 0.7rem;
-    font-weight: 300;
-    position: absolute;
-    bottom: 0px;
-    margin: 5px;
-    padding: 2px;
-    border-top: 1px solid white;
-    width: 75%;
-    left: 6px;
-}
-
-.add-btn {
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
-    height: calc(var(--add-btn-size) * 1.5);
-    background-color: #181818;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    cursor: pointer;
 }
 
 .add-note {
@@ -187,9 +164,10 @@ input {
     height: 80vh;
 }
 
-footer {
+footer, .add-btn {
     position: fixed;
     bottom: 0px;
+    left: 0;
     width: 100%;
     height: calc(var(--add-btn-size) * 1.5);
     background-color: #181818;
