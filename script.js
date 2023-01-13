@@ -63,13 +63,11 @@ function updateNote(noteId, title, description) {
     addNoteBtn.click();
     titleTag.value = title;
     descriptionTag.value = description;
-    console.log(noteId, title, description);
 }
 
 saveNoteBtn.addEventListener('click', e => {
     e.preventDefault();
     showMenu();
-    isUpdate = false;
 
     let noteTitle = titleTag.value;
     let noteDescription = descriptionTag.value;
@@ -90,6 +88,7 @@ saveNoteBtn.addEventListener('click', e => {
         // storing the note info the browser's local storage
         localStorage.setItem('notes', JSON.stringify(notes));
         showNotes();
+        isUpdate = false;
     }
 })
 
@@ -113,6 +112,3 @@ function showMenu() {
     noteEditor.style.zIndex = '-100';
 }
 
-function createNotes() {
-    
-}

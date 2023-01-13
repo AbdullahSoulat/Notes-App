@@ -69,6 +69,8 @@ body {
     color: var(--clr-accent);
     font-size: 1.1rem;
     font-weight: 500;
+    height: 26%;
+    overflow-y: hidden;
 }
 
 .note-content {
@@ -199,6 +201,7 @@ footer, .add-btn {
     aspect-ratio: 1;
     width: var(--add-btn-size);
     position: relative;
+    cursor: pointer;
 }
 
 .save-btn:hover {
