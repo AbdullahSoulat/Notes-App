@@ -63,6 +63,7 @@ body {
     width: var(--note-size);
     position: relative;
     cursor: pointer;
+    overflow-y: hidden;
 }
 
 .note-title {
