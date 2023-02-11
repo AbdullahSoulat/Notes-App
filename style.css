@@ -80,6 +80,7 @@ body {
     font-weight: 400;
     height: 50%;
     overflow-y: hidden;
+    overflow: hidden;
 }
 
 .uil-trash {
